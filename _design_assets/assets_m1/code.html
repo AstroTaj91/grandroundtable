@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grand RoundTable Idea Submission</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#00bfff",
+              "background-light": "#f5f8f8",
+              "background-dark": "#0f1e23", 
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            boxShadow: {
+                'glow': '0 0 20px rgba(0, 191, 255, 0.4)',
+                'glow-sm': '0 0 10px rgba(0, 191, 255, 0.3)',
+            }
+          },
+        },
+      }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111111; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00bfff; 
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 191, 255, 0.5);
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.1);
+        }
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #00bfff;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #00bfff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display antialiased text-white selection:bg-primary selection:text-black">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111111] overflow-x-hidden">
+<div class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-[20%] left-[-10%] w-[400px] h-[400px] bg-fuchsia-600/10 rounded-full blur-[100px]"></div>
+</div>
+<div class="relative z-10 flex flex-col flex-1 pb-24">
+<div class="flex items-center px-6 py-5 justify-between bg-[#111111]/80 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+<button class="text-white/70 hover:text-primary transition-colors flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h2 class="text-white text-sm font-semibold tracking-widest uppercase opacity-80">The Grand RoundTable</h2>
+<button class="text-white/70 hover:text-primary transition-colors flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/5">
+<span class="material-symbols-outlined text-[24px]">more_vert</span>
+</button>
+</div>
+<div class="px-6 pt-8 pb-4">
+<h1 class="text-white text-3xl font-bold leading-tight tracking-tight bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">
+                Initialize <br/>Validation Protocol
+            </h1>
+<p class="text-white/50 text-sm mt-2 font-light">
+                Securely submit your concept for AI council review.
+            </p>
+</div>
+<div class="px-6 py-4">
+<label class="flex flex-col w-full relative group">
+<span class="sr-only">Idea Description</span>
+<textarea class="flex w-full min-w-0 resize-none rounded-2xl bg-[#0a0a0a]/60 backdrop-blur-xl border border-cyan-500/40 text-white placeholder-gray-500 p-5 text-base font-normal leading-relaxed h-48 focus:outline-none focus:border-cyan-400 focus:bg-[#0a0a0a]/80 shadow-[0_0_15px_rgba(6,182,212,0.15)] focus:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition-all duration-300" placeholder="Describe your revolutionary idea here..."></textarea>
+<div class="absolute bottom-4 right-4 text-xs text-white/30 font-mono">0/2000</div>
+</label>
+</div>
+<div class="px-6 py-2">
+<div class="flex flex-col relative group cursor-pointer">
+<div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500/20 to-fuchsia-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md"></div>
+<div class="relative flex flex-col items-center gap-4 rounded-2xl border-2 border-dashed border-white/10 hover:border-primary/50 bg-white/[0.02] px-6 py-10 transition-colors duration-300">
+<div class="size-12 rounded-full bg-white/5 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300 shadow-glow-sm">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<p class="text-white text-base font-semibold">Upload Pitch Deck</p>
+<p class="text-white/40 text-xs text-center">Drag or Tap to upload PDF (Max 10MB)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-6 pt-8 pb-4 flex justify-between items-end">
+<h3 class="text-white text-lg font-bold leading-tight tracking-wide">Select Your Council</h3>
+<span class="text-xs text-primary font-mono bg-primary/10 px-2 py-1 rounded-md">4/8 Selected</span>
+</div>
+<div class="px-6 grid grid-cols-2 gap-4">
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Innovator" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of a male tech innovator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGnIs4yg_FMv3vspYcIftV6kEDCY3iir_6WJnuy0hnLiK_B-FHA0S84mpPbxDo1YBFqrvIwxd3Jpi1RViUTEV5DFTny5iBadJqDcxxyKZFjXpfS0ZAQUxcz8A-Gh1O-ZysJ3r1h0wCXL9WPvLwvgUbTK-OSdxKGuFffd2lfDx5LGXNXFSq6CFYuaCL2tdk9w7ljwX4-vTGvHITc3TIllJF_PBpg6GH-Nj3RuHTmkejUhTFfrnwEiAW6uVRQapCbZCDcVyKx7MgqfI"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Innovator</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Tech &amp; Space</div>
+</div>
+</label>
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Titan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of a bald business tycoon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6OpugFDDbAu4M6WGsvhvNgimkH7rSQ9lEOYZwjCmOk0D_bmXH-jgh-xUu_E4qehFykFdYmddQKloocsoTgtg8fB6ZXIek1a2qajI4nTkiiI6ft2dEQ7COFPzDfRC15VVGGsIdHtqILhDR1pA8XtMT-j5xa8Faa_QlyyGS8rYHWekYoQOpFOTy9iCgju1C_qdCiQdzaIf8Oc2WVKbervsv8KsqK0HvGLnyrjaZo6cTqjdLDnTWARmg9DCFwuK-QOWxXkGKyk4dhL8"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Titan</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Scale &amp; Logistics</div>
+</div>
+</label>
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Visionary" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of a creative visionary with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1mRfxlQdi0Gj_YMoQ6fSw4wDKDw7MX4_eiVEx0BN7BZZ4Hrfe1OMbt64bp8AAFKXJxNhvL7zv016COsWIkz0Uzy1BYfOHA166ky1EBi_juxNwR69u0gtWZT5YQgHbEAobSyRtMlYPzRjF335Qw6vjVdmLJUqjvRMABeCp1T-FaPedbf_kXxnkKAwNTtigl5o8tDPlQbzIBsH0KG3oxHgU84Mz6a1RnW0MjxLx-IcVqF074tgIUbYCrMQiEJmCObQ-uKhBFCBtyMI"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Visionary</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Product Design</div>
+</div>
+</label>
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Strategist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of a female strategist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEwkKu7LhNosaXl1JC2ohbVNoUpUw_MbcEcowdQWpHEiPEa6iYtZWHh65mQPKjON3uHQxAdoU1U-3lZd1ibEvAufANGLQWB-GpxWT6EaGgvb9lKeI5glDmHTf09EzVm0rvrTklEpSw4v1BR_Fy3KKDCWdiiaT3F8EB8_MZi86CVk6itGuCxzA7F-f-Q8W8xCarYOqSCyM4CdWijIt-cKRlxaN17y3PNTP9wY6N2_3ON2qNrHa3iooai-icJvn3W9ceBCwEPUmWzFc"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Strategist</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Market Warfare</div>
+</div>
+</label>
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Oracle" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of an older wise investor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAoStyCKvgFUsRXbRdrNwVm0N9dkEkJFv8IqPckp5YzIjC3cOKSmifbpmcYl_F7zP_WYeM3Zq4cEHR73xw0t4eM0muymDzxFy1L-DpT5le7LkbFLWEs9u2bipddN2yizaNSZl5hTGHOha0rerM10gdEeYTCckZkoLZKRtomt8qyQ2I3yHu1ALQh9hW6fyRhYZKn4FgaMrSzlaFZl09Q1ZVO_Y55Miugz4dHmr6bsNOew__dKsJlNbQz30lNngvK-g7vXANAwFDW_I"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Oracle</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Value Investing</div>
+</div>
+</label>
+<label class="glass-panel relative flex flex-col p-4 rounded-2xl gap-3 cursor-pointer group transition-all hover:bg-white/5 border-transparent hover:border-primary/30">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<div class="absolute top-4 right-4 size-5 rounded-full border border-white/20 peer-checked:bg-primary peer-checked:border-primary peer-checked:shadow-glow-sm flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[14px] text-black opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+<div class="size-12 rounded-full overflow-hidden bg-gray-800 border border-white/10">
+<img alt="The Disruptor" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Avatar of a young crypto disruptor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW2_ai6x2JEHhoiAP3-GupHSK2D6Nk7ORTh-Z0YHUm3vPQ8TzSRCeEBM-2_0a_42Yn4l26zq502KWfxET2zZjyoECt04tofvs_x17FJb8MRQA_FNdzgxnvC4dAntMy-sGpKQtB0h3b_splMoKAdkoUfuAfybMucME-xm--3tlnrhED73j9tuYOFAjGmmrfdinXLgkoyD4AHQtqDnK8mUA3Bd4tUaBKNdlFV1RB1A5Okq2F_Ba-Da2TN3B07n1wnYGg_uB9ioF9r0I"/>
+</div>
+<div>
+<div class="text-white font-semibold text-sm">The Disruptor</div>
+<div class="text-white/40 text-[10px] uppercase tracking-wider mt-0.5">Web3 &amp; DeFi</div>
+</div>
+</label>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 w-full p-6 bg-gradient-to-t from-[#111111] via-[#111111] to-transparent z-50">
+<button class="relative w-full overflow-hidden rounded-full h-14 bg-primary group shadow-glow hover:shadow-[0_0_30px_rgba(0,191,255,0.6)] transition-all duration-300">
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+<div class="relative flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-black font-bold">bolt</span>
+<span class="text-black text-base font-bold tracking-wider uppercase">Ignite Analysis</span>
+</div>
+</button>
+</div>
+</div>
+
+</body></html>

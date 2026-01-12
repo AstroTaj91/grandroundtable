@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00bfff;
+  --color-background-light: #f5f8f8;
+  --color-background-dark: #0f1e23;
+  --color-card-dark: #15262d;
+  
+  --font-display: var(--font-inter);
+  
+  --shadow-neon: 0 0 10px rgba(0, 191, 255, 0.3), 0 0 20px rgba(0, 191, 255, 0.1);
+  --shadow-neon-strong: 0 0 15px rgba(0, 191, 255, 0.5), 0 0 30px rgba(0, 191, 255, 0.2);
+}
+
+:root {
+  --foreground: #0f1e23;
+  --background: #f5f8f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ffffff;
+    --background: #0f1e23;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Custom Utilities if needed that rely on theme */
+.glass-panel {
+  @apply bg-black/70 backdrop-blur-md border border-white/5;
+}
