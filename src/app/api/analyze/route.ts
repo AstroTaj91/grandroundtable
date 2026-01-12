@@ -32,6 +32,7 @@ export async function POST(req: NextRequest) {
     const analysisRecord = {
         id: uuidv4(),
         createdAt: new Date().toISOString(),
+        status: "completed" as const,
         ...result
     };
     

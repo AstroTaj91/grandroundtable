@@ -9,7 +9,6 @@ interface PageProps {
 }
 
 export default async function AnalysisResultPage({ params }: PageProps) {
-  // Await params in Next.js 15+
   const { id } = await params;
   
   // In a server component, we can fetch directly from DB (if it was real DB).
