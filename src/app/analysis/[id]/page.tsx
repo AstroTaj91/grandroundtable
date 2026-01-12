@@ -36,9 +36,9 @@ export default async function AnalysisResultPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-1">
                 <SynthesisPanel 
-                   score={analysis.score} 
-                   verdict={analysis.verdict} 
-                   summary={analysis.summary}
+                   score={analysis.score || 0} 
+                   verdict={analysis.verdict || "Pending"} 
+                   summary={analysis.summary || "Analysis in progress..."}
                 />
             </div>
              <div className="lg:col-span-2 flex flex-col justify-center gap-4 text-gray-400 text-sm p-4 border border-white/5 rounded-xl bg-card-dark">
@@ -51,12 +51,12 @@ export default async function AnalysisResultPage({ params }: PageProps) {
         <div className="flex items-center justify-between mt-4">
           <h2 className="text-gray-900 dark:text-white text-xl font-bold tracking-tight">Expert Council</h2>
           <span className="text-xs text-gray-500 dark:text-gray-400 font-medium bg-gray-200 dark:bg-white/5 px-2 py-1 rounded-md">
-            {analysis.personas.length} Personas
+            {(analysis.personas || []).length} Personas
           </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">
-          {analysis.personas.map((persona: any, i: number) => (
+          {(analysis.personas || []).map((persona: any, i: number) => (
              <ExpertCard key={i} persona={persona} />
           ))}
         </div>
